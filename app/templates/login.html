@@ -1,0 +1,55 @@
+{% extends "index.html" %}
+
+{% block header %}
+	<header class="header relative border-bottom">
+		<div class="logo">
+			<div class="wrap center-block">
+				<figure class="image isotipo left">
+					<img src="/media/logo.jpg" alt="autocontrol"/>
+				</figure>
+			</div>
+		</div>
+		<a href="" class="button-menu icon-menu"></a>
+		<nav class="menu">
+			<ul class="list center-block wrap">
+				<li class="item">
+					<a href="/">Inicio</a>
+				</li>
+				<li class="item">
+					<a href="#">Servicios</a>
+				</li>
+				<li class="item">
+					<a href="#">Quienes Somos</a>
+				</li>
+				<li class="item">
+					<a href="#">Contáctenos</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="create-count">
+			<div class="registro right">
+				<a href="#" class="link-item singup-btn">Registro</a>
+			</div>
+		</div>
+		<div class="title">
+			<span>
+				AutoControl
+			</span>
+		</div>
+	</header>
+{% endblock %}
+{% block body %}
+	<section class="content-login">
+		<div class="content-login-data">
+			<span class="title-singup">Inicia Sesión</span>
+			<div class="content-login-field">	
+				<form action="" method="post">
+					{% csrf_token %}
+					
+					{{ form.as_p }}
+					<input type="submit" class="btn btn-default">
+				</form>
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends "index.html" %}
+{% block header %}
+	<header class="header relative border-bottom">
+		<div class="logo">
+			<div class="wrap center-block">
+				<figure class="image isotipo left">
+					<img src="/media/logo.jpg" alt="autocontrol"/>
+				</figure>
+			</div>
+		</div>
+		<a href="" class="button-menu icon-menu"></a>
+		<nav class="menu">
+			<ul class="list center-block wrap">
+				<li class="item">
+					<a href="/garage/">garage</a>
+				</li>
+				<li class="item">
+					<a href="#">Programar cita</a>
+				</li>
+				<li class="item">
+					<a href="#">Perfil</a>
+				</li>
+				<li class="item">
+					<a href="#">Configuraciones</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="create-count">
+			<div class="registro right">
+				<a href="/login" class="link-item login-btn ">ingresar</a>
+				<a href="#" class="link-item singup-btn">Registro</a>
+			</div>
+		</div>
+		<div class="title">
+			<span>
+				AutoControl
+			</span>
+		</div>
+	</header>
+{% endblock %}
+{% block body %}
+	<section class="content-main">
+		<div class="content-car left">
+			<div class="title-car">
+				<span class="title-car-data">Chevrolet Spark</span>
+			</div>
+			<figure class="car-photo">
+				<img src="/media/cars/car1.jpg" width="335" alt="">
+			</figure>
+			<div class="car-description">
+				<h4>GRF-500</h4>
+				<h5>Modelo 2011</h5>
+				<h5>Kilometraje inicial 50km</h5>
+			</div>
+			<div class="bottom-car">
+				<span class="icon-stats car-actions"></span>
+				<span class="icon-calendar car-actions"></span>
+				<span class="icon-address-book car-actions"></span>
+				<a href="#" class="link-item login-btn car-actions">detalles</a>
+			</div>
+		</div>
+		<div class="content-car left">
+			<div class="title-car">
+				<span class="title-car-data">Chevrolet Spark</span>
+			</div>
+			<figure class="car-photo">
+				<img src="/media/cars/car2.jpg" width="335" alt="">
+			</figure>
+			<div class="car-description">
+				<h4>GRF-500</h4>
+				<h5>Modelo 2011</h5>
+				<h5>Kilometraje inicial 50km</h5>
+			</div>
+			<div class="bottom-car">
+				<span class="icon-stats car-actions"></span>
+				<span class="icon-calendar car-actions"></span>
+				<span class="icon-address-book car-actions"></span>
+			</div>
+		</div>
+		<div class="content-car left">
+			<div class="title-car">
+				<span class="title-car-data">Chevrolet Spark</span>
+			</div>
+			<figure class="car-photo">
+				<img src="/media/cars/car1.jpg" width="335" alt="">
+			</figure>
+			<div class="car-description">
+				<h4>GRF-500</h4>
+				<h5>Modelo 2011</h5>
+				<h5>Kilometraje inicial 50km</h5>
+			</div>
+			<div class="bottom-car">
+				<span class="icon-stats car-actions"></span>
+				<span class="icon-calendar car-actions"></span>
+				<span class="icon-address-book car-actions"></span>
+			</div>
+		</div>
+	</section>
+{% endblock %}
